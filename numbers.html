@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+
+    <!-- cdn  link of css from bootstrap 5 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- end -->
+
+    <!-- importing icon from font-awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- end -->
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="./numbers.css">
+
+    <!-- end -->
+
+</head>
+
+<body>
+
+    <!-- this preloader is continuosly running until code are not load on browser it depends on your
+    internet and computer speed -->
+
+    <div id="preloader"></div>
+
+    <!-- end of preloader -->
+
+    <!-- navbar -->
+
+
+    <div class="nav-container">
+        <nav class="navbar w-100 container-fluid navbar-expand-lg navbar-light bg-red">
+            <div class="nav-bar container-fluid">
+                <div class="logo">
+                    <img src="./logo-and-icons/undraw_doll_play_evbw-removebg-preview_1_-removebg-preview-removebg-preview.png"
+                        alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="" aria-current="page" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="on-page" href="./learn.html">Learn ></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="###">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="ms-5" type="button"><a href="./sign in.html">Sign in</a></button>
+                        <button class="ms-2" type="button"><a href="./sign up.html">Sign up</a></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- end of navbar -->
+
+    <!-- back-icon -->
+
+    <div class="back-icon">
+        <a href="./learn.html"><i class="fa-sharp fa-solid fa-arrow-left fa-lg"></i></a>
+    </div>
+
+    <!-- end of back-icon -->
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>1</h1>
+                    <h1>One</h1>
+                    <button onclick="one.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>2</h1>
+                    <h1>Two</h1>
+                    <button onclick="two.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>3</h1>
+                    <h1>Three</h1>
+                    <button onclick="three.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>4</h1>
+                    <h1>Four</h1>
+                    <button onclick="four.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>5</h1>
+                    <h1>Five</h1>
+                    <button onclick="five.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>6</h1>
+                    <h1>Six</h1>
+                    <button onclick="six.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>7</h1>
+                    <h1>Seven</h1>
+                    <button onclick="seven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>8</h1>
+                    <h1>Eight</h1>
+                    <button onclick="eight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>9</h1>
+                    <h1>Nine</h1>
+                    <button onclick="nine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>10</h1>
+                    <h1>Ten</h1>
+                    <button onclick="ten.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>11</h1>
+                    <h1>Eleven</h1>
+                    <button onclick="eleven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>12</h1>
+                    <h1>Twelve</h1>
+                    <button onclick="twelve.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>13</h1>
+                    <h1>Thirteen</h1>
+                    <button onclick="thirteen.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>14</h1>
+                    <h1>Fourteen</h1>
+                    <button onclick="fourteen.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>15</h1>
+                    <h1>Fifteen</h1>
+                    <button onclick="fifteen.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>16</h1>
+                    <h1>Sixteen</h1>
+                    <button onclick="sixteen.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>17</h1>
+                    <h1>Seventeen</h1>
+                    <button onclick="seventeen.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>18</h1>
+                    <h1>Eighteen</h1>
+                    <button onclick="eighteen.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>19</h1>
+                    <h1>Nineteen</h1>
+                    <button onclick="nineteen.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>20</h1>
+                    <h1>Twenty</h1>
+                    <button onclick="twenty.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>21</h1>
+                    <h1>Twenty-one</h1>
+                    <button onclick="twentyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>22</h1>
+                    <h1>Twenty-two</h1>
+                    <button onclick="twentytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>23</h1>
+                    <h1>Twenty-three</h1>
+                    <button onclick="twentythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>24</h1>
+                    <h1>Twenty-four</h1>
+                    <button onclick="twentyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>25</h1>
+                    <h1>Twenty-five</h1>
+                    <button onclick="twentyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>26</h1>
+                    <h1>Twenty-six</h1>
+                    <button onclick="twentysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>27</h1>
+                    <h1>Twenty-seven</h1>
+                    <button onclick="twentyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>28</h1>
+                    <h1>Twenty-eight</h1>
+                    <button onclick="twentyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>29</h1>
+                    <h1>Twenty-nine</h1>
+                    <button onclick="twentynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>30</h1>
+                    <h1>Thirty</h1>
+                    <button onclick="thirty.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>31</h1>
+                    <h1>Thirty-one</h1>
+                    <button onclick="thirtyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>32</h1>
+                    <h1>Thirty-two</h1>
+                    <button onclick="thirtytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>33</h1>
+                    <h1>Thirty-three</h1>
+                    <button onclick="thirtythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>34</h1>
+                    <h1>Thirty-four</h1>
+                    <button onclick="thirtyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>35</h1>
+                    <h1>Thirty-five</h1>
+                    <button onclick="thirtyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>36</h1>
+                    <h1>Thirty-six</h1>
+                    <button onclick="thirtysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>37</h1>
+                    <h1>Thirty-seven</h1>
+                    <button onclick="thirtyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>38</h1>
+                    <h1>Thirty-eight</h1>
+                    <button onclick="thirtyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>39</h1>
+                    <h1>Thirty-nine</h1>
+                    <button onclick="thirtynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>40</h1>
+                    <h1>Forty</h1>
+                    <button onclick="forty.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>41</h1>
+                    <h1>Forty-one</h1>
+                    <button onclick="fortyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>42</h1>
+                    <h1>Forty-two</h1>
+                    <button onclick="fortytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>43</h1>
+                    <h1>Forty-three</h1>
+                    <button onclick="fortythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>44</h1>
+                    <h1>Forty-four</h1>
+                    <button onclick="fortyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>45</h1>
+                    <h1>Forty-five</h1>
+                    <button onclick="fortyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>46</h1>
+                    <h1>Forty-six</h1>
+                    <button onclick="fortysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>47</h1>
+                    <h1>Forty-seven</h1>
+                    <button onclick="fortyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>48</h1>
+                    <h1>Forty-eight</h1>
+                    <button onclick="fortyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>49</h1>
+                    <h1>Forty-nine</h1>
+                    <button onclick="fortynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>50</h1>
+                    <h1>Fifty</h1>
+                    <button onclick="fifty.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>51</h1>
+                    <h1>Fifty-one</h1>
+                    <button onclick="fiftyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>52</h1>
+                    <h1>Fifty-two</h1>
+                    <button onclick="fiftytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>53</h1>
+                    <h1>Fifty-three</h1>
+                    <button onclick="fiftythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>54</h1>
+                    <h1>Fifty-four</h1>
+                    <button onclick="fiftyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>55</h1>
+                    <h1>Fifty-five</h1>
+                    <button onclick="fiftyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>56</h1>
+                    <h1>Fifty-six</h1>
+                    <button onclick="fiftysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>57</h1>
+                    <h1>Fifty-seven</h1>
+                    <button onclick="fiftyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>58</h1>
+                    <h1>Fifty-eight</h1>
+                    <button onclick="fiftyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>59</h1>
+                    <h1>Fifty-nine</h1>
+                    <button onclick="fiftynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>60</h1>
+                    <h1>Sixty</h1>
+                    <button onclick="sixty.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>61</h1>
+                    <h1>Sixty-one</h1>
+                    <button onclick="sixtyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>62</h1>
+                    <h1>Sixty-two</h1>
+                    <button onclick="sixtytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>63</h1>
+                    <h1>Sixty-three</h1>
+                    <button onclick="sixtythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>64</h1>
+                    <h1>Sixty-four</h1>
+                    <button onclick="sixtyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>65</h1>
+                    <h1>Sixty-five</h1>
+                    <button onclick="sixtyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>66</h1>
+                    <h1>Sixty-six</h1>
+                    <button onclick="sixtysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>67</h1>
+                    <h1>Sixty-seven</h1>
+                    <button onclick="sixtyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>68</h1>
+                    <h1>Sixty-eight</h1>
+                    <button onclick="sixtyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>69</h1>
+                    <h1>Sixty-nine</h1>
+                    <button onclick="sixtynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>70</h1>
+                    <h1>Seventy</h1>
+                    <button onclick="seventy.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>71</h1>
+                    <h1>Seventy-one</h1>
+                    <button onclick="seventyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>72</h1>
+                    <h1>Seventy-two</h1>
+                    <button onclick="seventytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>73</h1>
+                    <h1>Seventy-three</h1>
+                    <button onclick="seventythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>74</h1>
+                    <h1>Seventy-four</h1>
+                    <button onclick="seventyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>75</h1>
+                    <h1>Seventy-five</h1>
+                    <button onclick="seventyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>76</h1>
+                    <h1>Seventy-six</h1>
+                    <button onclick="seventysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>77</h1>
+                    <h1>Seventy-seven</h1>
+                    <button onclick="seventyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>78</h1>
+                    <h1>Seventy-eight</h1>
+                    <button onclick="seventyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>79</h1>
+                    <h1>Seventy-nine</h1>
+                    <button onclick="seventynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>80</h1>
+                    <h1>Eighty</h1>
+                    <button onclick="eighty.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>81</h1>
+                    <h1>Eighty-one</h1>
+                    <button onclick="eightyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>82</h1>
+                    <h1>Eighty-two</h1>
+                    <button onclick="eightytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>83</h1>
+                    <h1>Eighty-three</h1>
+                    <button onclick="eightythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>84</h1>
+                    <h1>Eighty-four</h1>
+                    <button onclick="eightyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>85</h1>
+                    <h1>Eighty-five</h1>
+                    <button onclick="eightyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>86</h1>
+                    <h1>Eighty-six</h1>
+                    <button onclick="eightysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>87</h1>
+                    <h1>Eighty-seven</h1>
+                    <button onclick="eightyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>88</h1>
+                    <h1>Eighty-eight</h1>
+                    <button onclick="eightyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>89</h1>
+                    <h1>Eighty-nine</h1>
+                    <button onclick="eightynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>90</h1>
+                    <h1>Ninety</h1>
+                    <button onclick="ninety.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>91</h1>
+                    <h1>Ninety-One</h1>
+                    <button onclick="ninetyone.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>92</h1>
+                    <h1>Ninety-two</h1>
+                    <button onclick="ninetytwo.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>93</h1>
+                    <h1>Ninety-three</h1>
+                    <button onclick="ninetythree.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>94</h1>
+                    <h1>Ninety-four</h1>
+                    <button onclick="ninetyfour.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>95</h1>
+                    <h1>Ninety-five</h1>
+                    <button onclick="ninetyfive.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>96</h1>
+                    <h1>Ninety-six</h1>
+                    <button onclick="ninetysix.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="cards-parent row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>97</h1>
+                    <h1>Ninety-seven</h1>
+                    <button onclick="ninetyseven.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>98</h1>
+                    <h1>Ninety-eight</h1>
+                    <button onclick="ninetyeight.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>99</h1>
+                    <h1>Ninety-nine</h1>
+                    <button onclick="ninetynine.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container col mt-4">
+                <div class="card">
+                    <h1>100</h1>
+                    <h1>Hundred</h1>
+                    <button onclick="onehundred.play();">
+                        <i class="fa-solid fa-volume-high fa-md"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Give Us A Feed Back</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="###" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                <button class="btn btn_get btn_get_two" type="reset">Clear</button>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Download Our App On</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="###">Company Kids-Zone</a></li>
+                                <li><a href="###">Android</a></li>
+                                <li><a href="###">ios</a></li>
+                                <li><a href="###">Desktop</a></li>
+                                <li><a href="###">macOS</a></li>
+                                <li><a href="###"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="###">FAQ</a></li>
+                                <li><a href="###">Term &amp; conditions</a></li>
+                                <li><a href="###">Reporting</a></li>
+                                <li><a href="###">Documentation</a></li>
+                                <li><a href="###">Support Policy</a></li>
+                                <li><a href="###">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Socail Accounts</h3>
+                            <div class="f_social_icon">
+                                <a href="###" class="fab fa-facebook"></a>
+                                <a href="###" class="fab fa-twitter"></a>
+                                <a href="###" class="fab fa-youtube"></a>
+                                <a href="###" class="fab fa-instagram"></a>
+                                <a href="###" class="fab fa-google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400"> © <a href="###"> Kids-Zone</a> Inc.. 2023 All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end of footer -->
+
+
+    <!-- custom js -->
+
+    <script src="./numbers.js"></script>
+
+    <!-- end -->
+
+    <!-- cdn  link of js from bootstrap 5 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link from bootstrap 5 for css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- end -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> -->
+
+    <!-- importing icon from font-awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- end -->
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="./animals.css">
+
+    <!-- end -->
+
+    <!-- icon for browser tab -->
+
+    <link rel="icon" href="/logo-and-icons/kids-zone-logo.png">
+
+    <!-- end -->
+
+    <title>Animals</title>
+
+
+</head>
+
+<body>
+
+
+    <!-- this preloader is continuosly running until code are not load on browser it depends on your
+    internet and computer speed -->
+
+    <div id="preloader"></div>
+
+    <!-- end of preloader -->
+
+    
+    <!-- navbar -->
+
+
+    <div class="nav-container">
+        <nav class="navbar w-100 container-fluid navbar-expand-lg navbar-light bg-red">
+            <div class="nav-bar container-fluid">
+                <div class="logo">
+                    <img src="./logo-and-icons/undraw_doll_play_evbw-removebg-preview_1_-removebg-preview-removebg-preview.png"
+                        alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="" aria-current="page" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="on-page" href="./learn.html">Learn ></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="###">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="ms-5" type="button"><a href="./sign in.html">Sign in</a></button>
+                        <button class="ms-2" type="button"><a href="./sign up.html">Sign up</a></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- end of navbar -->
+
+    <!-- <animals-section-cards> -->
+    <section>
+
+        
+        <!-- back-icon -->
+
+        <div class="back-icon">
+            <a href="./learn.html"><i class="fa-sharp fa-solid fa-arrow-left fa-lg"></i></a>
+        </div>
+
+        <!-- end of back-icon -->
+
+        <!-- Animals -->
+        <h1 class="text-center p-4 heading">Animals</h1>
+        <!-- <row-1> -->
+
+        <div class="container-fluid mb-4">
+            <div class="row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-1.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Elephant</h3> <button class="card-btn"
+                                onclick="elephant.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-2.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Giraffe</h3> <button class="card-btn"
+                                onclick="giraffe.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-8.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Lion</h3> <button class="card-btn" onclick="lion.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-4.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Cat</h3> <button class="card-btn" onclick="cat.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </row-1> -->
+
+        <!-- <row-2> -->
+        <div class="container-fluid mb-4">
+            <div class="row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-5.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Dog</h3> <button class="card-btn" onclick="dog.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-6.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Goat</h3> <button class="card-btn" onclick="goat.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-7.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Horse</h3> <button class="card-btn" onclick="horse.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/animal-card-3.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Cow</h3> <button class="card-btn" onclick="cow.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </row-2> -->
+
+
+        <!-- Birds -->
+        <h1 class="text-center heading p-4">Birds</h1>
+
+        <!-- <row-1> -->
+        <div class="container-fluid mb-4">
+            <div class="row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/birds-card-1.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Parrot</h3> <button class="card-btn"
+                                onclick="parrot.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/birds-card-2.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Eagle</h3> <button class="card-btn" onclick="eagle.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/birds-card-3.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Pigeon</h3> <button class="card-btn"
+                                onclick="pigeon.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 ">
+                    <div class="animal-cards"><img src="./images/animals/birds-card-4.png" alt="" width="100%">
+                        <div class="d-flex justify-content-between p-2">
+                            <h3 class="animal-card-heading">Crow</h3> <button class="card-btn" onclick="crow.play();">
+                                <i class="fa-solid fa-volume-high fa-md"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </row-1> -->
+
+    </section>
+
+    <!-- </animals-section-cards> -->
+
+     <!-- footer -->
+
+     <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Give Us A Feed Back</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="###" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                <button class="btn btn_get btn_get_two" type="reset">Clear</button>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Download Our App On</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="###">Company Kids-Zone</a></li>
+                                <li><a href="###">Android</a></li>
+                                <li><a href="###">ios</a></li>
+                                <li><a href="###">Desktop</a></li>
+                                <li><a href="###">macOS</a></li>
+                                <li><a href="###"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="###">FAQ</a></li>
+                                <li><a href="###">Term &amp; conditions</a></li>
+                                <li><a href="###">Reporting</a></li>
+                                <li><a href="###">Documentation</a></li>
+                                <li><a href="###">Support Policy</a></li>
+                                <li><a href="###">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Socail Accounts</h3>
+                            <div class="f_social_icon">
+                                <a href="###" class="fab fa-facebook"></a>
+                                <a href="###" class="fab fa-twitter"></a>
+                                <a href="###" class="fab fa-youtube"></a>
+                                <a href="###" class="fab fa-instagram"></a>
+                                <a href="###" class="fab fa-google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400"> © <a href="###"> Kids-Zone</a> Inc.. 2023 All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end of footer -->
+
+
+    <!-- custom js -->
+
+    <script src="./animals.js"></script>
+
+    <!-- end -->
+
+    <!-- cdn link from bootstrap 5 for js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- end -->
+
+</body>
+
+</html>
